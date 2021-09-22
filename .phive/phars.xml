@@ -2,4 +2,5 @@
 <phive xmlns="https://phar.io/phive">
   <phar name="phpunit" version="^9.5.9" installed="9.5.9" location="./tools/phpunit" copy="true"/>
   <phar name="php-cs-fixer" version="^3.1.0" installed="3.1.0" location="./tools/php-cs-fixer" copy="true"/>
+  <phar name="psalm" version="^4.10.0" installed="4.10.0" location="./tools/psalm" copy="true"/>
 </phive>
