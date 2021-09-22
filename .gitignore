@@ -7,3 +7,6 @@
 # PHP-CS-Fixer
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
+
+# Psalm
+/.psalm/cache
