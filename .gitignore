@@ -1,2 +1,5 @@
 # PhpStorm
 /.idea
+
+# PHPUnit
+/.phpunit.cache
