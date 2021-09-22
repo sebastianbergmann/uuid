@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<psalm
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    resolveFromConfigFile="false"
+    cacheDirectory=".psalm/cache"
+    errorBaseline=".psalm/baseline.xml"
+    errorLevel="1"
+    phpVersion="8.0"
+    strictBinaryOperands="true"
+    checkForThrowsDocblock="true"
+    findUnusedVariablesAndParams="true"
+    findUnusedPsalmSuppress="true"
+    ensureArrayStringOffsetsExist="true"
+    ensureArrayIntOffsetsExist="true"
+>
+    <projectFiles>
+        <directory name="src" />
+    </projectFiles>
+</psalm>
