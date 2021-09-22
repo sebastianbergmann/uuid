@@ -35,6 +35,11 @@
             "src/functions.php"
         ]
     },
+    "autoload-dev": {
+        "classmap": [
+            "tests/traits"
+        ]
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
