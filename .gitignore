@@ -3,3 +3,7 @@
 
 # PHPUnit
 /.phpunit.cache
+
+# PHP-CS-Fixer
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
