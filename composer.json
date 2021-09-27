@@ -28,16 +28,8 @@
         "sort-packages": true
     },
     "autoload": {
-        "classmap": [
-            "src/"
-        ],
         "files": [
-            "src/functions.php"
-        ]
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/traits"
+          "src/uuid.php"
         ]
     },
     "extra": {

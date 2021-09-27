@@ -14,14 +14,20 @@ use PHPUnit\Framework\TestCase;
 /**
  * @covers ::\SebastianBergmann\Uuid\uuid
  *
- * @medium
+ * @small
  */
 final class UuidFunctionTest extends TestCase
 {
-    use UuidAssertionTrait;
-
     public function testGeneratesUuid(): void
     {
         $this->assertStringIsUuid(uuid());
+    }
+
+    private function assertStringIsUuid(string $string): void
+    {
+        $this->assertMatchesRegularExpression(
+            '/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/',
+            $string
+        );
     }
 }
