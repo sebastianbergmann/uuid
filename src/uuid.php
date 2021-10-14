@@ -14,20 +14,31 @@ use function hexdec;
 use function random_bytes;
 use function sprintf;
 use function substr;
+use Throwable;
 
 /**
  * @no-named-arguments
+ *
+ * @throws SourceOfRandomnessCannotBeFoundException
  */
 function uuid(): string
 {
-    $uuid = bin2hex(random_bytes(16));
+    try {
+        $bytes = random_bytes(16);
+        // @codeCoverageIgnoreStart
+    } catch (Throwable) {
+        throw new SourceOfRandomnessCannotBeFoundException;
+    }
+    // @codeCoverageIgnoreEnd
+
+    $bytes = bin2hex($bytes);
 
     return sprintf(
         '%08s-%04s-4%03s-%04x-%012s',
-        substr($uuid, 0, 8),
-        substr($uuid, 8, 4),
-        substr($uuid, 13, 3),
-        hexdec(substr($uuid, 16, 4)) & 0x3fff | 0x8000,
-        substr($uuid, 20, 12)
+        substr($bytes, 0, 8),
+        substr($bytes, 8, 4),
+        substr($bytes, 13, 3),
+        hexdec(substr($bytes, 16, 4)) & 0x3fff | 0x8000,
+        substr($bytes, 20, 12)
     );
 }
