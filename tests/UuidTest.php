@@ -19,7 +19,12 @@ final class UuidTest extends TestCase
 {
     public function testGeneratesUuid(): void
     {
-        $this->assertStringIsUuid(uuid());
+        $a = uuid();
+        $b = uuid();
+
+        $this->assertStringIsUuid($a);
+        $this->assertStringIsUuid($b);
+        $this->assertNotSame($a, $b);
     }
 
     private function assertStringIsUuid(string $string): void
