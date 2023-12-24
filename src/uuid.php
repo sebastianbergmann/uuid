@@ -28,7 +28,7 @@ function uuid(): string
         substr($bytes, 0, 8),
         substr($bytes, 8, 4),
         substr($bytes, 13, 3),
-        hexdec(substr($bytes, 16, 4)) & 0x3fff | 0x8000,
-        substr($bytes, 20, 12)
+        hexdec(substr($bytes, 16, 4)) & 0x3FFF | 0x8000,
+        substr($bytes, 20, 12),
     );
 }
