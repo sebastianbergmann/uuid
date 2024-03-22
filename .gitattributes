@@ -1,6 +1,7 @@
 /.github                export-ignore
 /.phive                 export-ignore
 /.psalm                 export-ignore
+/build                  export-ignore
 /tools                  export-ignore
 /tools/*                binary
 /tests                  export-ignore
