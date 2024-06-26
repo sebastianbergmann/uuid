@@ -1,6 +1,5 @@
 [![Latest Stable Version](https://poser.pugx.org/sebastian/uuid/v/stable.png)](https://packagist.org/packages/sebastian/uuid)
 [![CI Status](https://github.com/sebastianbergmann/uuid/workflows/CI/badge.svg)](https://github.com/sebastianbergmann/uuid/actions)
-[![Type Coverage](https://shepherd.dev/github/sebastianbergmann/uuid/coverage.svg)](https://shepherd.dev/github/sebastianbergmann/uuid)
 [![codecov](https://codecov.io/gh/sebastianbergmann/uuid/branch/main/graph/badge.svg)](https://codecov.io/gh/sebastianbergmann/uuid)
 
 # sebastian/uuid
