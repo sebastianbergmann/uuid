@@ -17,6 +17,8 @@ use function substr;
 
 /**
  * @no-named-arguments
+ *
+ * @return non-empty-string
  */
 function uuid(): string
 {
