@@ -1,4 +1,4 @@
-[![Latest Stable Version](https://poser.pugx.org/sebastian/uuid/v/stable.png)](https://packagist.org/packages/sebastian/uuid)
+[![Latest Stable Version](https://poser.pugx.org/sebastian/uuid/v)](https://packagist.org/packages/sebastian/uuid)
 [![CI Status](https://github.com/sebastianbergmann/uuid/workflows/CI/badge.svg)](https://github.com/sebastianbergmann/uuid/actions)
 [![codecov](https://codecov.io/gh/sebastianbergmann/uuid/branch/main/graph/badge.svg)](https://codecov.io/gh/sebastianbergmann/uuid)
 
