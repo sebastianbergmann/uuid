@@ -23,8 +23,8 @@ In your bug report, please provide the following:
 
 * A quick summary and/or background
 * Steps to reproduce
-  * Be specific!
-  * Give sample code if you can.
+    * Be specific!
+    * Give sample code if you can.
 * What you expected would happen
 * What actually happens
 * Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
@@ -54,10 +54,10 @@ This project uses [PHPUnit](https://phpunit.de/) for testing:
 ./vendor/bin/phpunit
 ```
 
-This project uses [Psalm](https://psalm.dev/) for type checking:
+This project uses [PHPStan](https://phpstan.org/) for static analysis:
 
 ```shell
-./tools/psalm --config=.psalm/config.xml
+./tools/phpstan
 ```
 
 This project uses [PHP-CS-Fixer](https://cs.symfony.com/) to enforce coding guidelines:
@@ -73,10 +73,3 @@ The commands shown above require an autoloader script at `vendor/autoload.php`. 
 ```
 
 Please understand that we will not accept a pull request when its changes violate this project's coding guidelines or break the test suite.
-
-
-## Low Maintenance Project
-
-This is a low maintenance project. The scope of features and support are purposefully kept narrow for my purposes to ensure long term maintenance is viable. I am not looking to grow this into a bigger project at all.
-
-Issues and PRs raised for bugs are perfectly fine assuming they do not significantly increase the scope of the project. Please do not open PRs for new features that expand the scope.
