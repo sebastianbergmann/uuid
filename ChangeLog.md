@@ -2,6 +2,12 @@
 
 All notable changes are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
+## [2.0.0] - 2026-MM-DD
+
+### Removed
+
+* This component is no longer supported on PHP 8.1, PHP 8.2, and PHP 8.3
+
 ## [1.0.2] - 2023-07-13
 
 ### Changed
@@ -16,6 +22,7 @@ All notable changes are documented in this file using the [Keep a CHANGELOG](htt
 
 * Initial release
 
+[2.0.0]: https://github.com/sebastianbergmann/uuid/compare/1.0.2...main
 [1.0.2]: https://github.com/sebastianbergmann/uuid/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/sebastianbergmann/uuid/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/sebastianbergmann/uuid/compare/f4a58bc49316b4dae46aa69cbe311d08932be2f6...1.0.0
