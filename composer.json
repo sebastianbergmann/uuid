@@ -29,8 +29,11 @@
         "sort-packages": true
     },
     "autoload": {
+        "classmap": [
+            "src/"
+        ],
         "files": [
-          "src/uuid.php"
+            "src/uuid.php"
         ]
     },
     "extra": {

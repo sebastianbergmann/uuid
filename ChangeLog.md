@@ -4,6 +4,10 @@ All notable changes are documented in this file using the [Keep a CHANGELOG](htt
 
 ## [2.0.0] - 2026-MM-DD
 
+### Added
+
+* `uuidFromBytes()` for creating a UUID of a given version (1 to 8) from 16 given bytes, with the bits of its version and its variant set according to [RFC 9562](https://www.rfc-editor.org/rfc/rfc9562)
+
 ### Removed
 
 * This component is no longer supported on PHP 8.1, PHP 8.2, and PHP 8.3
